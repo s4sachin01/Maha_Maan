@@ -36,8 +36,9 @@ body {
 }
 
 .brand img {
-  width: 38px;
-  height: auto;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
   background: white;
   padding: 4px;
   border-radius: 6px;
@@ -59,22 +60,32 @@ nav a:hover {
   background: linear-gradient(135deg, #0b2c4d, #123c63);
   color: white;
   text-align: center;
-  padding: 90px 20px;
+  padding: 80px 20px;
+}
+
+.hero-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
-.trust-line {
+.trust {
   font-size: 14px;
   letter-spacing: 1px;
 }
 
 .tagline {
   font-style: italic;
-  margin: 18px 0;
+  margin: 16px 0;
 }
 
 .actions {
@@ -124,12 +135,9 @@ nav a:hover {
 /* GRID */
 .grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
   margin-top: 40px;
-}
-
-.grid.three {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 /* CARD */
@@ -138,12 +146,6 @@ nav a:hover {
   padding: 30px 20px;
   border-radius: 14px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-/* CONTACT */
-.contact-box {
-  margin-top: 30px;
-  font-size: 16px;
 }
 
 /* FOOTER */
