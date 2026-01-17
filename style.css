@@ -9,7 +9,7 @@ body {
   color: #1f2933;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 .header {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
@@ -55,7 +55,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* HERO */
+/* ================= HERO ================= */
 .hero {
   background: linear-gradient(135deg, #0b2c4d, #123c63);
   color: white;
@@ -92,7 +92,7 @@ nav a:hover {
   margin-top: 25px;
 }
 
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 .btn {
   display: inline-block;
   padding: 12px 26px;
@@ -110,7 +110,7 @@ nav a:hover {
   color: white;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 .section {
   padding: 80px 20px;
   max-width: 1200px;
@@ -132,7 +132,7 @@ nav a:hover {
   margin: auto;
 }
 
-/* GRID */
+/* ================= GRID & CARDS ================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -140,7 +140,6 @@ nav a:hover {
   margin-top: 40px;
 }
 
-/* CARD */
 .card {
   background: white;
   padding: 30px 20px;
@@ -148,7 +147,54 @@ nav a:hover {
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
-/* FOOTER */
+/* ================= BRAND SECTION ================= */
+.brand-section {
+  background: #ffffff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.brand-section h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.brand-row {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 35px;
+}
+
+.brand-item {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.brand-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,0.12);
+}
+
+.brand-item img {
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.brand-item span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b2c4d;
+}
+
+/* ================= FOOTER ================= */
 footer {
   background: #0b2c4d;
   color: #cbd5e1;
