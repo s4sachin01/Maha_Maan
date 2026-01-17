@@ -1,167 +1,128 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahamaan Motors | Authorized Distributor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-body {
-  background: #f5f7fa;
-  color: #222;
-}
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/mahamaan-logo.jpg" alt="Mahamaan Motors Logo">
+      <span>Mahamaan Motors</span>
+    </div>
 
-/* COMMON */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#products">Products</a>
+      <a href="#locations">Locations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #123c63;
-}
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="container hero-content">
+    <img src="images/mahamaan-logo.jpg" class="hero-logo" alt="Mahamaan Group Logo">
 
-/* HEADER */
-.header {
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
+    <h1>Mahamaan Motors</h1>
+    <p class="trust">Genuine | Authorized | Expert | Fast | Trusted</p>
+    <p class="tagline">“Genuine Service Parts. Genuine Care.”</p>
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0;
-}
+    <div class="actions">
+      <a href="#locations" class="btn">View Locations</a>
+      <a href="#contact" class="btn outline">Contact Us</a>
+    </div>
+  </div>
+</section>
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
-  color: #123c63;
-}
+<!-- AUTHORIZED BRANDS -->
+<section class="brands">
+  <div class="container">
+    <h2>Authorised Parts Distributors</h2>
 
-.brand img {
-  height: 42px;
-}
+    <div class="brand-logos">
+      <div class="brand-box">
+        <img src="images/maruti-accessories.jpg" alt="Maruti Genuine Accessories">
+        <p>Maruti Genuine Accessories</p>
+      </div>
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #123c63;
-  font-weight: 600;
-}
+      <div class="brand-box">
+        <img src="images/maruti-parts.jpg" alt="Maruti Genuine Parts">
+        <p>Maruti Genuine Parts</p>
+      </div>
 
-/* HERO */
-.hero {
-  background: linear-gradient(180deg, #123c63, #0b2c4a);
-  color: white;
-  padding: 80px 0;
-  text-align: center;
-}
+      <div class="brand-box">
+        <img src="images/amaronamaron.png" alt="Amaron Batteries">
+        <p>Amaron Batteries</p>
+      </div>
 
-.hero-logo {
-  width: 120px;
-  margin-bottom: 20px;
-}
+      <div class="brand-box">
+        <img src="images/hero.jpg" alt="Hero">
+        <p>Hero</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-.trust {
-  margin-top: 10px;
-  font-weight: bold;
-}
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Established in 1997, Mahamaan Motors is a trusted distributor of
+      Maruti Genuine Parts (MGP) in Haryana, serving MASS, dealers,
+      workshops, and customers with transparency, speed, and reliability.
+    </p>
+  </div>
+</section>
 
-.tagline {
-  margin: 10px 0 30px;
-  font-style: italic;
-}
+<!-- PRODUCTS -->
+<section id="products" class="section light">
+  <div class="container">
+    <h2>Products & Services</h2>
+    <div class="grid">
+      <div class="card">Engine Components</div>
+      <div class="card">Electrical & Electronic Parts</div>
+      <div class="card">Body & Interior Accessories</div>
+      <div class="card">Lubricants & Maintenance Products</div>
+    </div>
+  </div>
+</section>
 
-.actions .btn {
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-}
+<!-- LOCATIONS -->
+<section id="locations" class="section">
+  <div class="container">
+    <h2>Our Network</h2>
+    <div class="grid">
+      <div class="card">Main Warehouse – Hisar</div>
+      <div class="card">MASS – Authorized Service Station</div>
+      <div class="card">Retail Outlets Across Haryana</div>
+    </div>
+  </div>
+</section>
 
-.btn {
-  background: white;
-  color: #123c63;
-}
+<!-- CONTACT -->
+<section id="contact" class="section light">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>
+      📞 92155-44122 / 94160-44122<br>
+      📧 mahamaan.wh.hisar@gmail.com
+    </p>
+  </div>
+</section>
 
-.btn.outline {
-  background: transparent;
-  border: 2px solid white;
-  color: white;
-}
+<!-- FOOTER -->
+<footer class="footer">
+  © 2026 Mahamaan Motors · Trusted Since 1997
+</footer>
 
-/* BRANDS */
-.brands {
-  background: #ffffff;
-  padding: 60px 0;
-}
-
-.brand-logos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-}
-
-.brand-box {
-  background: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-}
-
-.brand-box img {
-  max-width: 160px;
-  max-height: 80px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.brand-box p {
-  font-weight: 600;
-  font-size: 14px;
-}
-
-/* SECTIONS */
-.section {
-  padding: 70px 0;
-}
-
-.section.light {
-  background: #ffffff;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-}
-
-.card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-  text-align: center;
-  font-weight: 600;
-}
-
-/* FOOTER */
-.footer {
-  background: #123c63;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-}
+</body>
+</html>
