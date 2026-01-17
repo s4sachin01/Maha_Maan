@@ -6,6 +6,8 @@
   <meta name="theme-color" content="#0b2a4a">
   <title>Mahamaan Motors | Authorized Maruti Distributor</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -13,128 +15,191 @@
 <header class="header">
   <div class="container header-inner">
     <div class="brand">
-      <img src="images/mahamaan-logo.jpg" alt="Mahamaan Motors">
-      <span>Mahamaan Motors</span>
+      <img src="images/mahamaan-logo.jpg" alt="Mahamaan Motors Logo" class="logo">
+      <span class="brand-name">Mahamaan Motors</span>
     </div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#brands">Distributors</a>
-      <a href="#network">Network</a>
-      <a href="#contact">Contact</a>
+    <nav class="nav">
+      <a href="#home" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#brands" class="nav-link">Distributors</a>
+      <a href="#network" class="nav-link">Network</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 </header>
 
-<!-- HOME (UNCHANGED) -->
+<!-- HOME -->
 <section id="home" class="hero">
   <div class="container hero-content">
     <img src="images/mahamaan-logo.jpg" class="hero-logo" alt="Mahamaan Motors">
-    <h1>Mahamaan Motors</h1>
+    <h1 class="hero-title">Mahamaan Motors</h1>
     <p class="trust">Genuine | Authorized | Expert | Trusted</p>
     <p class="tagline">“Genuine Service Parts. Genuine Care.”</p>
 
     <div class="hero-actions">
-      <a href="#network" class="btn primary">View Locations</a>
-      <a href="#contact" class="btn secondary">Contact Us</a>
+      <a href="#network" class="btn primary"><i class="fas fa-map-marker-alt"></i> View Locations</a>
+      <a href="#contact" class="btn secondary"><i class="fas fa-phone"></i> Contact Us</a>
     </div>
   </div>
+  <div class="hero-overlay"></div>
 </section>
 
-<!-- ABOUT US (CEO PHOTO ONLY ADDED) -->
+<!-- ABOUT US -->
 <section id="about" class="section light">
   <div class="container about-grid">
-
     <div class="about-text">
       <h2>About Mahamaan Motors</h2>
       <p class="highlight">
-        Authorized Distributor of Maruti Genuine Parts & Accessories
+        Authorized Distributor of Maruti Genuine Parts & Accessories <i class="fas fa-check-circle"></i>
       </p>
       <p>
-        Established in 1997, <strong>Mahamaan Motors</strong> is a trusted name
-        in the automobile spare parts industry, operating as an authorized
-        distributor of Maruti Genuine Parts (MGP) and Maruti Genuine
-        Accessories across Haryana.
+        Established in 1997, <strong>Mahamaan Motors</strong> stands as a trusted pillar in the automobile spare parts industry, proudly serving as an authorized distributor of Maruti Genuine Parts (MGP) and Maruti Genuine Accessories throughout Haryana.
       </p>
-      <ul>
-        <li>✔ Authorized Maruti Distributor</li>
-        <li>✔ Serving Since 1997</li>
-        <li>✔ Strong Warehouse & Logistics</li>
-        <li>✔ Trusted by MASS & Workshops</li>
+      <ul class="features-list">
+        <li><i class="fas fa-certificate"></i> Authorized Maruti Distributor</li>
+        <li><i class="fas fa-calendar-check"></i> Serving Since 1997</li>
+        <li><i class="fas fa-warehouse"></i> Strong Warehouse & Logistics</li>
+        <li><i class="fas fa-users"></i> Trusted by MASS & Workshops</li>
       </ul>
     </div>
 
     <div class="ceo-card">
-      <img src="images/ceo-ashok-sharma.jpg" alt="Mr. Ashok Sharma">
+      <div class="ceo-image-wrapper">
+        <img src="images/ceo-ashok-sharma.jpg" alt="Mr. Ashok Sharma, CEO">
+      </div>
       <h3>Mr. Ashok Sharma</h3>
-      <p class="ceo-title">Chief Executive Officer<br>B.Sc. (Electronics)</p>
+      <p class="ceo-title">Chief Executive Officer<br><small>B.Sc. (Electronics)</small></p>
       <p class="ceo-desc">
-        30+ years experience in automobile trade, marketing, finance,
-        and strategic leadership.
+        With over 30 years of expertise in automobile trade, marketing, finance, and strategic leadership, leading Mahamaan Motors to excellence.
       </p>
     </div>
-
   </div>
 </section>
 
-<!-- AUTHORISED MARUTI SUZUKI DISTRIBUTOR (IMAGES ADJUSTED ONLY) -->
+<!-- DISTRIBUTORS -->
 <section id="brands" class="section">
   <div class="container">
-    <h2>Authorised Maruti Suzuki Distributor</h2>
+    <h2 class="section-title">Authorised Maruti Suzuki Distributor</h2>
+    <p class="section-subtitle">Explore our premium range of genuine parts and accessories</p>
 
     <div class="dist-grid">
-      <!-- use your existing images here -->
-      <div class="dist-item"><img src="images/seat.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/mat.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/perfume.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/steering.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/visor.jpg" alt=""></div>
-
-      <div class="dist-item"><img src="images/wheel.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/horn.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/mga-logo.png" alt=""></div>
-      <div class="dist-item"><img src="images/side-cladding.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/grill.jpg" alt=""></div>
-
-      <div class="dist-item"><img src="images/bumper.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/cover.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/mirror.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/camera.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/mudflap.jpg" alt=""></div>
-
-      <div class="dist-item"><img src="images/remote.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/floor-mat.jpg" alt=""></div>
-      <div class="dist-item"><img src="images/navigation.jpg" alt=""></div>
+      <div class="dist-item">
+        <img src="images/seat.jpg" alt="Car Seat Cover" loading="lazy">
+        <div class="overlay"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="dist-item">
+        <img src="images/mat.jpg" alt="Floor Mat" loading="lazy">
+        <div class="overlay"><i class="fas fa-plus"></i></div>
+      </div>
+      <div class="dist-item">
+        <img src="images/perfume.jpg" alt="Car Perfume" loading="lazy">
+        <div class="overlay"><i class="fas fa-plus"></i></div>
+      </div>
+      <!-- Continue for all 18 images similarly -->
+      <div class="dist-item"><img src="images/steering.jpg" alt="Steering Cover" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/visor.jpg" alt="Sun Visor" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/wheel.jpg" alt="Steering Wheel" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/horn.jpg" alt="Horn" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/mga-logo.png" alt="MGA Logo" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/side-cladding.jpg" alt="Side Cladding" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/grill.jpg" alt="Grill" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/bumper.jpg" alt="Bumper" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/cover.jpg" alt="Cover" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/mirror.jpg" alt="Mirror" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/camera.jpg" alt="Camera" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/mudflap.jpg" alt="Mudflap" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/remote.jpg" alt="Remote" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/floor-mat.jpg" alt="Floor Mat" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
+      <div class="dist-item"><img src="images/navigation.jpg" alt="Navigation" loading="lazy"><div class="overlay"><i class="fas fa-plus"></i></div></div>
     </div>
   </div>
 </section>
 
-<!-- OUR NETWORK (UNCHANGED) -->
+<!-- NETWORK -->
 <section id="network" class="section light">
   <div class="container">
-    <h2>Our Network</h2>
+    <h2>Our Extensive Network</h2>
     <div class="grid">
-      <div class="card">Main Warehouse – Hisar</div>
-      <div class="card">Authorized MASS</div>
-      <div class="card">Retail Network Across Haryana</div>
+      <div class="card">
+        <i class="fas fa-warehouse fa-3x"></i>
+        <h3>Main Warehouse – Hisar</h3>
+        <p>Central hub for efficient distribution</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-store fa-3x"></i>
+        <h3>Authorized MASS</h3>
+        <p>Multiple authorized service stations</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-map fa-3x"></i>
+        <h3>Retail Network Across Haryana</h3>
+        <p>Statewide presence for quick access</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT (UNCHANGED) -->
+<!-- CONTACT -->
 <section id="contact" class="section">
   <div class="container">
-    <h2>Contact Us</h2>
-    <p>
-      📞 92155-44122 / 94160-44122<br>
-      📧 mahamaan.wh.hisar@gmail.com
-    </p>
+    <h2>Get In Touch</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-phone fa-2x"></i> 92155-44122 / 94160-44122</p>
+      <p><i class="fas fa-envelope fa-2x"></i> <a href="mailto:mahamaan.wh.hisar@gmail.com">mahamaan.wh.hisar@gmail.com</a></p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
-  © 2026 Mahamaan Motors · Authorized Maruti Distributor · Since 1997
+  <div class="container">
+    <p>&copy; 2026 Mahamaan Motors · Authorized Maruti Distributor · Since 1997</p>
+    <p>All Rights Reserved | Haryana, India</p>
+  </div>
 </footer>
+
+<script>
+  // Mobile menu toggle
+  const hamburger = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    nav.classList.toggle('active');
+  });
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Intersection Observer for animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  });
+
+  document.querySelectorAll('.dist-item, .card, .about-text').forEach(el => {
+    observer.observe(el);
+  });
+</script>
 
 </body>
 </html>
