@@ -9,73 +9,87 @@ body {
   color: #1f2933;
 }
 
-/* CONTAINER */
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
-}
-
-/* HEADER */
-.header {
-  background: white;
+/* NAVBAR */
+.navbar {
+  background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
 }
 
-.header-flex {
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 0;
 }
 
-.nav-logo {
-  height: 48px;
+.brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0b2c4d;
 }
 
-nav a {
+.navbar nav a {
   margin-left: 20px;
   text-decoration: none;
   color: #0b2c4d;
   font-weight: 500;
 }
 
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
 /* HERO */
 .hero {
   background: linear-gradient(135deg, #0b2c4d, #123c63);
   color: white;
-  padding: 90px 0;
   text-align: center;
+  padding: 80px 20px;
+}
+
+.logo {
+  max-width: 110px;
+  width: 110px;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .hero h1 {
-  font-size: 44px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
-.trust-line {
-  font-weight: 600;
+.badges {
+  font-size: 14px;
   letter-spacing: 1px;
+  opacity: 0.9;
 }
 
 .tagline {
-  margin: 20px 0;
   font-style: italic;
+  margin: 18px 0;
 }
 
 .hero-actions {
   margin-top: 25px;
 }
 
+/* BUTTONS */
 .btn {
+  display: inline-block;
+  padding: 12px 26px;
   background: white;
   color: #0b2c4d;
-  padding: 12px 26px;
   border-radius: 30px;
   text-decoration: none;
-  margin: 5px;
-  display: inline-block;
   font-weight: 600;
+  margin: 5px;
 }
 
 .btn.outline {
@@ -86,12 +100,14 @@ nav a {
 
 /* SECTIONS */
 .section {
-  padding: 80px 0;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
   text-align: center;
 }
 
 .section.light {
-  background: white;
+  background: #ffffff;
 }
 
 .section h2 {
@@ -99,10 +115,15 @@ nav a {
   margin-bottom: 20px;
 }
 
+.center-text {
+  max-width: 800px;
+  margin: auto;
+}
+
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   margin-top: 40px;
 }
@@ -119,12 +140,17 @@ nav a {
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
+.icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
 /* CTA */
 .cta {
   background: #123c63;
   color: white;
   text-align: center;
-  padding: 80px 0;
+  padding: 80px 20px;
 }
 
 .cta h2 {
@@ -132,10 +158,10 @@ nav a {
 }
 
 /* FOOTER */
-.footer {
+footer {
   background: #0b2c4d;
   color: #cbd5e1;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   font-size: 14px;
 }
