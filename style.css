@@ -37,11 +37,15 @@ body {
 
 /* LOGO */
 .logo {
-  width: 130px;
+  max-width: 120px;   /* controls size */
+  width: 100%;
+  height: auto;
   background: white;
-  padding: 12px;
+  padding: 8px;
   border-radius: 10px;
+  margin-bottom: 15px;
 }
+
 
 /* BUTTONS */
 .hero-btns {
