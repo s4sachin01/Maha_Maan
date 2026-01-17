@@ -20,6 +20,19 @@ body {
   margin: auto;
 }
 
+.section {
+  padding: 60px 0;
+}
+
+.section.light {
+  background: #f2f6fb;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 /* HEADER */
 .header {
   background: #ffffff;
@@ -41,7 +54,6 @@ body {
 
 .brand img {
   height: 40px;
-  width: auto;
 }
 
 .brand span {
@@ -64,7 +76,6 @@ nav a {
 
 .hero-logo {
   width: 110px;
-  height: auto;
   margin-bottom: 15px;
 }
 
@@ -77,25 +88,24 @@ nav a {
 }
 
 .tagline {
-  margin: 12px 0 25px;
+  margin-top: 10px;
   font-style: italic;
 }
 
-.actions .btn {
-  padding: 12px 26px;
-  background: #ffffff;
-  color: #0b2a4a;
-  border-radius: 30px;
-  text-decoration: none;
-  margin: 6px;
-  display: inline-block;
-  font-weight: bold;
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.actions .btn.outline {
-  background: transparent;
-  color: #ffffff;
-  border: 2px solid #ffffff;
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 10px 20px rgba(11,42,74,0.12);
 }
 
 /* ABOUT */
@@ -105,31 +115,37 @@ nav a {
 
 .about-company {
   text-align: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto 60px;
 }
 
 .about-tag {
   color: #1e6fd9;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 /* CEO */
 .ceo-section {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 40px;
+  grid-template-columns: 240px 1fr;
+  gap: 35px;
   align-items: center;
   margin-bottom: 60px;
 }
 
-.ceo-image img {
-  width: 260px;
-  height: 320px;
-  object-fit: cover;
+.ceo-image {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(11,42,74,0.25);
+}
+
+.ceo-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .ceo-title {
@@ -138,22 +154,22 @@ nav a {
   margin-bottom: 12px;
 }
 
-/* INFO */
+/* INFO BLOCK */
 .info-block {
   margin-bottom: 40px;
 }
 
 .info-block ul {
   list-style: none;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .info-block li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* VISION */
+/* VISION MISSION */
 .vision-mission {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -163,7 +179,7 @@ nav a {
 .vm-box {
   background: linear-gradient(135deg, #0b2a4a, #123d6b);
   color: #ffffff;
-  padding: 28px;
+  padding: 30px;
   border-radius: 14px;
 }
 
@@ -177,18 +193,19 @@ nav a {
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .hero-logo { width: 90px; }
-  .hero h1 { font-size: 32px; }
+  .hero h1 {
+    font-size: 32px;
+  }
 
   .ceo-section {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .ceo-image img {
-    width: 200px;
-    height: 250px;
-    margin: auto;
+  .ceo-image {
+    margin: 0 auto 20px;
+    width: 180px;
+    height: 220px;
   }
 
   .vision-mission {
