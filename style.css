@@ -9,13 +9,16 @@ body {
   color: #1f2933;
 }
 
-/* NAVBAR */
-.navbar {
+/* HEADER */
+.header {
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.nav-container {
+.header-inner {
   max-width: 1200px;
   margin: auto;
   padding: 12px 20px;
@@ -25,19 +28,29 @@ body {
 }
 
 .brand {
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 700;
   color: #0b2c4d;
 }
 
-.navbar nav a {
-  margin-left: 20px;
+.brand img {
+  width: 38px;
+  height: auto;
+  background: white;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+nav a {
+  margin-left: 18px;
   text-decoration: none;
   color: #0b2c4d;
   font-weight: 500;
 }
 
-.navbar nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -46,29 +59,17 @@ body {
   background: linear-gradient(135deg, #0b2c4d, #123c63);
   color: white;
   text-align: center;
-  padding: 80px 20px;
-}
-
-.logo {
-  max-width: 110px;
-  width: 110px;
-  height: auto;
-  display: block;
-  margin: 0 auto 18px;
-  background: white;
-  padding: 8px;
-  border-radius: 10px;
+  padding: 90px 20px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 44px;
   margin-bottom: 10px;
 }
 
-.badges {
+.trust-line {
   font-size: 14px;
   letter-spacing: 1px;
-  opacity: 0.9;
 }
 
 .tagline {
@@ -76,7 +77,7 @@ body {
   margin: 18px 0;
 }
 
-.hero-actions {
+.actions {
   margin-top: 25px;
 }
 
@@ -115,7 +116,7 @@ body {
   margin-bottom: 20px;
 }
 
-.center-text {
+.center {
   max-width: 800px;
   margin: auto;
 }
@@ -123,7 +124,6 @@ body {
 /* GRID */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 25px;
   margin-top: 40px;
 }
@@ -140,21 +140,10 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.06);
 }
 
-.icon {
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
-/* CTA */
-.cta {
-  background: #123c63;
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.cta h2 {
-  margin-bottom: 20px;
+/* CONTACT */
+.contact-box {
+  margin-top: 30px;
+  font-size: 16px;
 }
 
 /* FOOTER */
