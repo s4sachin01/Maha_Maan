@@ -1,3 +1,8 @@
+/* FORCE SAME LOOK ON ALL DEVICES */
+html {
+  color-scheme: light;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +11,8 @@
 }
 
 body {
-  color: #222;
+  background: #ffffff;
+  color: #0b2a4a;
   line-height: 1.6;
 }
 
@@ -22,18 +28,19 @@ body {
 }
 
 .section.light {
-  background: #f5f5f5;
+  background: #f2f6fb;
 }
 
 h2 {
   text-align: center;
   margin-bottom: 30px;
+  color: #0b2a4a;
 }
 
 /* HEADER */
 .header {
   background: #ffffff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dbe3ef;
 }
 
 .header-inner {
@@ -62,40 +69,34 @@ nav a {
   color: #0b2a4a;
   margin-left: 20px;
   text-decoration: none;
-  font-size: 15px;
 }
 
 nav a:hover {
-  color: #007bff;
+  color: #1e6fd9;
 }
 
-/* HERO */
+/* HERO – FIXED BLUE */
 .hero {
-  background: linear-gradient(135deg, #0b2a4a, #123d6b);
+  background: linear-gradient(135deg, #0b2a4a 0%, #123d6b 100%);
   color: #ffffff;
   text-align: center;
   padding: 90px 0;
 }
 
-.hero-content {
-  position: relative;
-}
-
 .hero-logo {
   width: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hero h1 {
   font-size: 44px;
   color: #ffffff;
   opacity: 1;
-  margin-bottom: 10px;
 }
 
 .trust {
   font-weight: bold;
-  margin-bottom: 8px;
+  margin: 8px 0;
 }
 
 .tagline {
@@ -110,8 +111,8 @@ nav a:hover {
   margin: 6px;
   background: #ffffff;
   color: #0b2a4a;
-  text-decoration: none;
   border-radius: 30px;
+  text-decoration: none;
   font-weight: bold;
 }
 
@@ -142,15 +143,16 @@ nav a:hover {
   width: 100%;
   height: 120px;
   object-fit: contain;
-  background: #fff;
+  background: #ffffff;
   padding: 12px;
   border-radius: 8px;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 18px rgba(11,42,74,0.15);
 }
 
 .brand-box p {
   margin-top: 12px;
   font-weight: bold;
+  color: #0b2a4a;
 }
 
 /* GRID */
@@ -161,19 +163,19 @@ nav a:hover {
 }
 
 .card {
-  padding: 25px;
   background: #ffffff;
-  text-align: center;
+  padding: 25px;
   border-radius: 10px;
+  text-align: center;
   font-weight: bold;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  color: #0b2a4a;
+  box-shadow: 0 10px 20px rgba(11,42,74,0.12);
 }
 
 /* FOOTER */
 .footer {
   background: #0b2a4a;
-  color: #ddd;
+  color: #ffffff;
   text-align: center;
   padding: 16px 0;
-  font-size: 14px;
 }
