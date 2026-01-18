@@ -7,7 +7,6 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,8 +15,7 @@
 <header class="header">
   <div class="container header-inner">
     <div class="brand">
-      <img src="images/logo-mahamaan.jpg" alt="Mahamaan Motors Logo">
-
+      <img src="images/logo-mahamaan.jpg" alt="Mahamaan Motors">
       <span>Mahamaan Motors</span>
     </div>
 
@@ -52,8 +50,19 @@
       </div>
     </div>
 
-    <div class="hero-image">
-      <img src="images/hero.jpg" alt="Mahamaan Motors">
+    <!-- SLIDER -->
+    <div class="hero-slider">
+      <div class="slides active"><img src="images/warehouse-1.jpg"></div>
+      <div class="slides"><img src="images/warehouse-2.jpg"></div>
+      <div class="slides"><img src="images/warehouse-3.jpg"></div>
+      <div class="slides"><img src="images/warehouse-4.jpg"></div>
+
+      <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
     </div>
   </div>
 </section>
@@ -62,11 +71,10 @@
 <section id="about" class="about">
   <div class="container">
     <h2>About Mahamaan Motors</h2>
-    <p class="about-text">
-      Since 1997, Mahamaan Motors has been a trusted partner for genuine
-      Maruti spare parts in Haryana. Built on integrity, reliability,
-      and long-term relationships, we proudly serve dealers, workshops,
-      and service networks.
+    <p>
+      Since 1997, Mahamaan Motors has been a trusted distributor of Maruti
+      Genuine Parts in Haryana. We serve workshops, dealers and service
+      centers with integrity, scale and reliability.
     </p>
 
     <div class="about-cards">
@@ -76,11 +84,37 @@
       </div>
       <div class="about-card">
         <i class="fa-solid fa-shield-halved"></i>
-        <h4>Authorized Maruti Distributor</h4>
+        <h4>Authorized Distributor</h4>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="product
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <p>© 2026 Mahamaan Motors | Authorized Maruti Distributor | Haryana, India</p>
+  </div>
+</footer>
+
+<script>
+  const slides = document.querySelectorAll('.slides');
+  const dots = document.querySelectorAll('.dot');
+  let current = 0;
+
+  function showSlide(i){
+    slides.forEach((s,idx)=>s.classList.toggle('active',idx===i));
+    dots.forEach((d,idx)=>d.classList.toggle('active',idx===i));
+    current=i;
+  }
+
+  dots.forEach((d,i)=>d.onclick=()=>showSlide(i));
+
+  setInterval(()=>{
+    current=(current+1)%slides.length;
+    showSlide(current);
+  },4000);
+</script>
+
+</body>
+</html>
