@@ -5,10 +5,7 @@
   <title>Mahamaan Motors | Authorized Maruti Distributor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <link rel="stylesheet" href="style.css">
@@ -19,14 +16,16 @@
 <header class="header">
   <div class="container header-inner">
     <div class="brand">
-      <img src="images/logo-mahamaan.png" alt="Mahamaan Motors Logo">
+      <img src="images/logo-mahamaan.png" alt="Mahamaan Motors">
       <span>Mahamaan Motors</span>
     </div>
 
     <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Products</a>
+      <a href="#">Network</a>
+      <a href="#">Contact</a>
     </nav>
 
     <div class="hamburger">
@@ -36,81 +35,124 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero">
+<section class="hero" style="background-image:url('images/hero-bg.jpg')">
   <div class="hero-overlay"></div>
-  <div class="container hero-content">
-    <h1>Mahamaan Motors – Genuine Service Parts. Genuine Care.</h1>
-    <p class="trust">Genuine | Authorized | Expert | Fast | Trusted</p>
-    <p class="sub">
-      Authorized Distributor of Maruti Genuine Parts & Accessories since 1997
-    </p>
 
-    <div class="hero-actions">
-      <a href="#contact" class="btn primary">Contact Us</a>
-      <a href="#about" class="btn outline">About Us</a>
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>Trusted Maruti Parts<br>Distributor Since 1997</h1>
+      <p class="sub">
+        Authorized Distributor of Maruti Genuine Parts & Accessories
+      </p>
+
+      <div class="hero-btns">
+        <a href="#" class="btn red">Our Network</a>
+        <a href="#" class="btn dark">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/hero-car.png" alt="Mahamaan Motors Vehicle">
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container about-grid">
-    <div class="about-text">
-      <h2>About Mahamaan Motors</h2>
-      <p>
-        Established in 1997, Mahamaan Motors is a trusted and authorized distributor
-        of Maruti Genuine Parts & Accessories in Haryana. We serve MASS, workshops,
-        dealers, and customers with complete transparency and reliability.
-      </p>
+<section class="about">
+  <div class="container">
+    <h2>About Mahamaan Motors</h2>
+    <p>
+      Since 1997, Mahamaan Motors has been a trusted partner for genuine
+      Maruti parts in Haryana. We are committed to quality, reliability,
+      and long-term relationships.
+    </p>
 
-      <p class="highlight">
-        Powered by Trust, Driven by Quality – Since 1997
-      </p>
+    <div class="about-cards">
+      <div class="about-card">
+        <i class="fa-solid fa-award"></i>
+        <h4>24+ Years of Excellence</h4>
+      </div>
+      <div class="about-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h4>Authorized Maruti Distributor</h4>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="ceo-card">
-      <img src="images/ceo-ashok-sharma.jpg" alt="Mr. Ashok Sharma">
-      <h3>Mr. Ashok Sharma</h3>
-      <span>Chief Executive Officer | B.Sc. (Electronics)</span>
-      <p>
-        With over 30 years of experience in the automobile trade, Mr. Sharma has been
-        the driving force behind Mahamaan Motors’ growth, modernization, and
-        reputation for integrity.
-      </p>
+<!-- PRODUCTS -->
+<section class="products">
+  <div class="container">
+    <h2>Our Products</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/product-engine.jpg">
+        <span>Maruti Spare Parts</span>
+      </div>
+      <div class="product-card">
+        <img src="images/product-battery.jpg">
+        <span>Car Batteries</span>
+      </div>
+      <div class="product-card">
+        <img src="images/product-seat.jpg">
+        <span>Seat Covers</span>
+      </div>
+      <div class="product-card">
+        <img src="images/product-mat.jpg">
+        <span>Floor Mats</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NETWORK -->
+<section class="network">
+  <div class="container">
+    <h2>Our Network</h2>
+
+    <div class="network-grid">
+      <div class="network-card">
+        <img src="images/network-warehouse.png">
+        <h4>Main Warehouse, Hisar</h4>
+        <p>Central Distribution Hub</p>
+      </div>
+      <div class="network-card">
+        <img src="images/network-mass.png">
+        <h4>Authorized MASS</h4>
+        <p>Approved Service Centers</p>
+      </div>
+      <div class="network-card">
+        <img src="images/network-haryana.png">
+        <h4>Retail Outlets</h4>
+        <p>Across Haryana</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section light">
-  <div class="container contact-box">
-    <h2>Contact Us</h2>
+<section class="contact">
+  <div class="container">
+    <h2>Get in Touch</h2>
 
     <p><i class="fa-solid fa-phone"></i> 92155-44122 | 94160-44122</p>
     <p><i class="fa-solid fa-envelope"></i> mahamaan.wh.hisar@gmail.com</p>
 
-    <div class="social">
-      <a href="#"><i class="fab fa-whatsapp"></i></a>
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
+    <a class="btn red">Send Inquiry</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© Mahamaan Motors | Authorized Maruti Genuine Parts Distributor</p>
-  <p>Since 1997 · Haryana, India</p>
+  <p>© 2026 Mahamaan Motors | Authorized Maruti Distributor</p>
+  <p>Since 1997 | Haryana, India</p>
 </footer>
 
 <script>
   const ham = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');
-
-  ham.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    ham.classList.toggle('active');
-  });
+  ham.onclick = () => nav.classList.toggle('active');
 </script>
 
 </body>
