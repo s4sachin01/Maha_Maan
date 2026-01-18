@@ -7,9 +7,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #1e293b;
-  line-height: 1.6;
 }
 
+/* CONTAINER */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 14px 0;
 }
 
 .brand {
@@ -40,16 +40,17 @@ body {
 }
 
 .brand img {
-  height: 40px;
+  height: 42px;
 }
 
 .nav a {
   color: #fff;
-  margin-left: 20px;
   text-decoration: none;
+  margin-left: 22px;
   font-size: 14px;
 }
 
+/* HAMBURGER */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -57,15 +58,15 @@ body {
 }
 
 .hamburger span {
-  background: #fff;
-  height: 3px;
   width: 25px;
+  height: 3px;
+  background: #fff;
   margin: 4px 0;
 }
 
 /* HERO */
 .hero {
-  background: url("images/hero.jpg") center/cover no-repeat;
+  background: url("images/hero-bg.jpg") center/cover no-repeat;
   min-height: 90vh;
   position: relative;
   color: #fff;
@@ -85,24 +86,30 @@ body {
 
 .hero h1 {
   font-size: 42px;
-  margin-bottom: 15px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.trust-line {
+.trust {
+  margin-top: 15px;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
-.hero-btns {
+.sub {
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.hero-actions {
   margin-top: 30px;
 }
 
 .btn {
-  padding: 12px 22px;
+  padding: 12px 26px;
   border-radius: 5px;
   text-decoration: none;
-  font-weight: 500;
   margin: 5px;
+  font-weight: 500;
 }
 
 .primary {
@@ -110,72 +117,44 @@ body {
   color: #fff;
 }
 
-.secondary {
+.outline {
   border: 1px solid #fff;
   color: #fff;
 }
 
-/* SECTIONS */
+/* SECTION */
 .section {
   padding: 70px 0;
 }
 
-.dark {
+.light {
   background: #f1f5f9;
 }
 
-.section h2 {
-  margin-bottom: 20px;
-}
-
-/* GRID */
-.grid-2 {
+/* ABOUT */
+.about-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 30px;
+  gap: 40px;
+}
+
+.highlight {
+  margin-top: 15px;
+  font-weight: 600;
 }
 
 /* CEO */
 .ceo-card {
   background: #fff;
   padding: 25px;
-  text-align: center;
   border-radius: 8px;
+  text-align: center;
 }
 
 .ceo-card img {
-  width: 120px;
+  width: 130px;
   border-radius: 50%;
   margin-bottom: 15px;
-}
-
-/* CARDS */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #fff;
-  padding: 30px;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.card i {
-  font-size: 32px;
-  color: #0b2a4a;
-  margin-bottom: 10px;
-}
-
-/* WHY */
-.why-list {
-  list-style: none;
-}
-
-.why-list li {
-  margin-bottom: 10px;
 }
 
 /* CONTACT */
@@ -183,9 +162,13 @@ body {
   text-align: center;
 }
 
+.contact-box p {
+  margin: 10px 0;
+}
+
 .social a {
-  margin: 0 10px;
   font-size: 22px;
+  margin: 0 10px;
   color: #0b2a4a;
 }
 
@@ -194,7 +177,7 @@ body {
   background: #0b2a4a;
   color: #fff;
   text-align: center;
-  padding: 25px 10px;
+  padding: 22px 10px;
   font-size: 14px;
 }
 
@@ -218,7 +201,7 @@ body {
     display: flex;
   }
 
-  .grid-2 {
+  .about-grid {
     grid-template-columns: 1fr;
   }
 
