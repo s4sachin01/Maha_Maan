@@ -1,211 +1,117 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mahamaan Motors | Authorized Maruti Distributor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-  font-family: 'Poppins', sans-serif;
-  color: #1e293b;
-}
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-/* CONTAINER */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-}
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-/* HEADER */
-.header {
-  position: sticky;
-  top: 0;
-  background: #0b2a4a;
-  z-index: 1000;
-}
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-}
+<!-- HEADER -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/logo-mahamaan.png" alt="Mahamaan Motors Logo">
+      <span>Mahamaan Motors</span>
+    </div>
 
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-weight: 600;
-}
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
 
-.brand img {
-  height: 42px;
-}
+    <div class="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
 
-.nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 22px;
-  font-size: 14px;
-}
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1>Mahamaan Motors – Genuine Service Parts. Genuine Care.</h1>
+    <p class="trust">Genuine | Authorized | Expert | Fast | Trusted</p>
+    <p class="sub">
+      Authorized Distributor of Maruti Genuine Parts & Accessories since 1997
+    </p>
 
-/* HAMBURGER */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
+    <div class="hero-actions">
+      <a href="#contact" class="btn primary">Contact Us</a>
+      <a href="#about" class="btn outline">About Us</a>
+    </div>
+  </div>
+</section>
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  margin: 4px 0;
-}
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <div class="about-text">
+      <h2>About Mahamaan Motors</h2>
+      <p>
+        Established in 1997, Mahamaan Motors is a trusted and authorized distributor
+        of Maruti Genuine Parts & Accessories in Haryana. We serve MASS, workshops,
+        dealers, and customers with complete transparency and reliability.
+      </p>
 
-/* HERO */
-.hero {
-  background: url("images/hero-bg.jpg") center/cover no-repeat;
-  min-height: 90vh;
-  position: relative;
-  color: #fff;
-}
+      <p class="highlight">
+        Powered by Trust, Driven by Quality – Since 1997
+      </p>
+    </div>
 
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(11,42,74,0.85);
-}
+    <div class="ceo-card">
+      <img src="images/ceo-ashok-sharma.jpg" alt="Mr. Ashok Sharma">
+      <h3>Mr. Ashok Sharma</h3>
+      <span>Chief Executive Officer | B.Sc. (Electronics)</span>
+      <p>
+        With over 30 years of experience in the automobile trade, Mr. Sharma has been
+        the driving force behind Mahamaan Motors’ growth, modernization, and
+        reputation for integrity.
+      </p>
+    </div>
+  </div>
+</section>
 
-.hero-content {
-  position: relative;
-  padding: 120px 0;
-  text-align: center;
-}
+<!-- CONTACT -->
+<section id="contact" class="section light">
+  <div class="container contact-box">
+    <h2>Contact Us</h2>
 
-.hero h1 {
-  font-size: 42px;
-  max-width: 900px;
-  margin: auto;
-}
+    <p><i class="fa-solid fa-phone"></i> 92155-44122 | 94160-44122</p>
+    <p><i class="fa-solid fa-envelope"></i> mahamaan.wh.hisar@gmail.com</p>
 
-.trust {
-  margin-top: 15px;
-  font-weight: 500;
-}
+    <div class="social">
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</section>
 
-.sub {
-  margin-top: 10px;
-  opacity: 0.9;
-}
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© Mahamaan Motors | Authorized Maruti Genuine Parts Distributor</p>
+  <p>Since 1997 · Haryana, India</p>
+</footer>
 
-.hero-actions {
-  margin-top: 30px;
-}
+<script>
+  const ham = document.querySelector('.hamburger');
+  const nav = document.querySelector('.nav');
 
-.btn {
-  padding: 12px 26px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin: 5px;
-  font-weight: 500;
-}
+  ham.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    ham.classList.toggle('active');
+  });
+</script>
 
-.primary {
-  background: #e11d48;
-  color: #fff;
-}
-
-.outline {
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-/* SECTION */
-.section {
-  padding: 70px 0;
-}
-
-.light {
-  background: #f1f5f9;
-}
-
-/* ABOUT */
-.about-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 40px;
-}
-
-.highlight {
-  margin-top: 15px;
-  font-weight: 600;
-}
-
-/* CEO */
-.ceo-card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-.ceo-card img {
-  width: 130px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-/* CONTACT */
-.contact-box {
-  text-align: center;
-}
-
-.contact-box p {
-  margin: 10px 0;
-}
-
-.social a {
-  font-size: 22px;
-  margin: 0 10px;
-  color: #0b2a4a;
-}
-
-/* FOOTER */
-.footer {
-  background: #0b2a4a;
-  color: #fff;
-  text-align: center;
-  padding: 22px 10px;
-  font-size: 14px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .nav {
-    display: none;
-    flex-direction: column;
-    background: #0b2a4a;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 100%;
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-  }
-}
+</body>
+</html>
